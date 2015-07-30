@@ -1,0 +1,20 @@
+body{
+    background-color: #303030;
+}
+
+.header .container h1{
+    font-size: 50px;
+    font-family: Arial;
+    margin-top: -5px;
+    margin-left: 30px;
+    color: #00BAE6;
+}
+
+.nav .container a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav .container a:visited{
+    color: white;
+}
