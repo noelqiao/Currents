@@ -23,3 +23,30 @@ body{
 .nav .container a:hover{
     color: #59B3EF;
 }
+
+.nav .container{
+    color: white;
+}
+
+.Main{
+    margin: auto;
+    background-image: url('https://quarterlifeconversations.files.wordpress.com/2013/04/danceparty.jpg');
+    width: 590px;
+    height: 350px;
+}
+
+.Main .container p{
+    font-size: 30px;
+    color: white;
+}
+
+.Main .container h1{
+    font-size: 50px;
+    color: white;
+}
+
+.Main .container{
+    position: relative;
+    top: 215px;
+    left: 10px;
+}
