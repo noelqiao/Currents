@@ -7,7 +7,7 @@ body{
     font-family: Arial;
     margin-top: -5px;
     margin-left: 30px;
-    color: #00BAE6;
+    color: #008AE6;
 }
 
 .nav .container a:link{
@@ -17,4 +17,9 @@ body{
 
 .nav .container a:visited{
     color: white;
+    text-decoration: none;
+}
+
+.nav .container a:hover{
+    color: #59B3EF;
 }
