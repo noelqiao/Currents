@@ -1,37 +1,74 @@
 body{
-    background-color: #303030;
+    /*background-color: #303030;*/
+    background: url('http://cdn.desktopwallpapers4.me/wallpapers/abstract/1680x1050/2/15932-simple-gradient-1680x1050-abstract-wallpaper.jpg') no-repeat 0em -3.5em fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
-.header .container h1{
-    font-size: 50px;
+.header h1{
+    font-size: 4.5em;
     font-family: Arial;
-    margin-top: -5px;
-    margin-left: 30px;
-    color: #008AE6;
+    margin-top: 0.02em;
+    margin-left: 0.1em;
+    color: #1996E8;
 }
 
-.nav .container a:link{
-    color: red;
-    text-decoration: none;
+.menu img{
+    width: 2em;
+    height: auto;
+    margin: 1.15em 0em 0em 0em;
 }
 
-.nav .container a:visited{
-    color: red;
-    text-decoration: none;
+#menubtn{
+    cursor: pointer;
 }
 
-.nav .container a:hover{
-    color: #59B3EF;
-}
-
-.nav .container li{
+.nav a:link{
     color: white;
-    display: inline;
+    text-decoration: none;
+}
+
+.nav a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: #C6C6C6;
+}
+
+.nav li{
+    font-size: 1.65em;
+    margin: 0.7em 0.3em 0em 0.3em;
+    color: white;
+    display: inline-block;
+}
+
+.nav {
+    margin-left: 9.5em;
+}
+
+.main-nav a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav li{
+    margin-top: 12px;
+    color: white;
+    display: inline-block;
 }
 
 .Main{
     margin: auto;
-    background-image: url('https://quarterlifeconversations.files.wordpress.com/2013/04/danceparty.jpg');
     width: 590px;
     height: 350px;
 }

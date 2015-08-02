@@ -2,39 +2,43 @@
 <html lang="en">
     <head>
         <title>Currents</title>
-        <link type="text/css" rel="stylesheet" href="css/HP.css"/>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <!-- Latest compiled and minified JavaScript -->
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/HP.css"/>
     </head>
     <body>
-        <div class="header">
-                <div class="row">
-                    <div class="col-md-2 col-md-offset-4">
-                        <h1>Currents</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="menu">
+                        <img id="menubtn" src="https://nccwsc.usgs.gov/sites/all/themes/usgs/images/menu.png"/>
                     </div>
                 </div>
-        </div>
-        <div class="nav">
-            <div class="container">
-                <ul>
-                    <li><a href="SignUp.html">Sign Up</a></li>
-                    <li><a href="LogIn.html">Log In</a></li>
-                    <li><a href="Help.html">Help</a></li>
-                </ul>
-                <ul>
-                    <li><a href="Discover.html">Discover</a></li>
-                    <li><a href="Top.html">Top List</a></li>
-                </ul>
+                <div class="col-md-4 col-md-offset-7">
+                    <div class="nav">
+                    <ul>
+                        <li><a href="SignUp.html">Sign Up</a></li>
+                        <li><a href="LogIn.html">Log In</a></li>
+                        <li><a href="Help.html">Help</a></li>
+                    </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="Main">
-            <div class="container">
-                <h1>Discover Currents</h1>
-                <p>For the community, by the community.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="main-nav">
+                    <ul>
+                        <li><a class="btn" href="Discover.html" role="button">Discover</a></li>
+                        <li><a class="btn" href="Top.html" role="button">Top List</a></li>
+                    </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="js/HP.js"></script>
     </body>
 </html>
