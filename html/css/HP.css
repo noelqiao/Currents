@@ -1,19 +1,20 @@
 body{
-    /*background-color: #303030;*/
-    background: url('http://cdn.desktopwallpapers4.me/wallpapers/abstract/1680x1050/2/15932-simple-gradient-1680x1050-abstract-wallpaper.jpg') no-repeat 0em -3.5em fixed;
+    background: url('http://cdn.desktopwallpapers4.me/wallpapers/abstract/1680x1050/2/15932-simple-gradient-1680x1050-abstract-wallpaper.jpg') no-repeat 0em -3.5em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .header h1{
     font-size: 4.5em;
-    font-family: Arial;
-    margin-top: 0.02em;
-    margin-left: 0.1em;
-    color: #1996E8;
+    font-family: Arial, cursive;
+    color: white;
+    margin-left: -0.55em;
+    text-shadow: 2px 2px 5px black;
 }
 
 .menu img{

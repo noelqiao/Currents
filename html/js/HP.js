@@ -1,7 +1,7 @@
 var menu = function(){
     $('#menubtn').click(function(){
         $('body').animate({
-            left: "200px"
+        left: "200px"
         }, 300);
     });
 };
