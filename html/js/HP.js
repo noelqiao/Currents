@@ -1,5 +1,6 @@
 var menu = function(){
-    $('#menubtn').click(function(){
+    $('#menubtn').toggle(
+        function(){
         $('body').animate({
         left: "200px"
         }, 300);
