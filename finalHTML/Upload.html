@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Currents - Discover Now</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="css/Upload.css"/>
+        <link type="text/css" rel="stylesheet" href="css/Menu.css"/>
+  </head>
+  <body>
+    <div class="menu"> <!--Creates Sidebar-->
+        <!--<img id="menubtn" src="https://nccwsc.usgs.gov/sites/all/themes/usgs/images/menu.png"/>-->
+        <h3>Currents</h3>
+        <ul>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Upload</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+    </div>
+    <!--Next part divides up space where embed videos will go-->
+    <div id="search"></div>
+    <form action="/search" method="get" class="sfm">
+      <input type="text" name="q" value="Search for music..." id="sf"
+      onblur="if (this.value == '') {this.value = 'Search for music...';}"
+    onfocus="if (this.value == 'Search for music...') {this.value = '';}" />
+      <input type="submit" value="Search" id="sb"/>
+    </form>
+    <div class="display">
+        <h1>Upload a Video</h1>
+        <h3>Song Title</h3>
+        <h3>Artist</h3>
+        <h3>URL:</h3>
+        <h3>Cover?</h3>
+    </div>
+  </body>
+</html>

@@ -4,21 +4,95 @@
     <title>Currents - Discover Now</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <link type="text/css" rel="stylesheet" href="finalHTML/css/HP.css"/>
+        <link type="text/css" rel="stylesheet" href="css/HP.css"/>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="menu">
-      <div class="container">
+    <div class="menu"> <!--Creates Sidebar-->
+        <!--<img id="menubtn" src="https://nccwsc.usgs.gov/sites/all/themes/usgs/images/menu.png"/>-->
         <h3>Currents</h3>
         <ul>
           <li><a href="#">Discover</a></li>
           <li><a href="#">Profile</a></li>
-          <li><a href="#">Link</a></li>
+          <li><a href="https://currents-nolqiao.c9.io/finalHTML/Upload.html">Upload</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
         </ul>
-        <a class="btn" href="#">Start Now</a>
-      </div>
+    </div>
+    <!--Next part divides up space where embed videos will go-->
+    <div id="search"></div>
+    <form action="/search" method="get" class="sfm">
+      <input type="text" name="q" value="Search for music..." id="sf"
+      onblur="if (this.value == '') {this.value = 'Search for music...';}"
+    onfocus="if (this.value == 'Search for music...') {this.value = '';}" />
+      <input type="submit" value="Search" id="sb"/>
+    </form>
+  <div class="display">
+      <tbody>
+
+        <tr>
+          <td>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/Tbgv8PkO9eo" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/ZD8YPY8RBQc" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/siwpn14IE7E" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6vYnas6q3Sg" frameborder="0" allowfullscreen></iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <iframe id="selected"  width="560" height="315" src="https://www.youtube.com/embed/0pVABElms84" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe id="selected"  width="560" height="315" src="https://www.youtube.com/embed/f1eMI0d-1Hs" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe id="selected" width="560" height="315" src="https://www.youtube.com/embed/mknLaFJZ4v4" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe id="selected" width="560" height="315" src="https://www.youtube.com/embed/CE92-dRwjjM" frameborder="0" allowfullscreen></iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <iframe id="selected" width="560" height="315" src="https://www.youtube.com/embed/5YDaPx9IFnM" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe id="selected" width="560" height="315" src="https://www.youtube.com/embed/h0ytmeRMIlQ" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe id="selected" width="560" height="315" src="https://www.youtube.com/embed/EDeTT84kAQM" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe id="selected" width="560" height="315" src="https://www.youtube.com/embed/EhcMCYEX1O8" frameborder="0" allowfullscreen></iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <iframe id="selected" width="560" height="315" src="https://www.youtube.com/embed/Y1II6Ok1t9A" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe id="selected" width="560" height="315" src="https://www.youtube.com/embed/cSPfeTwl8Kw" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe id="selected" width="560" height="315" src="https://www.youtube.com/embed/pMoAcBpUd5Q" frameborder="0" allowfullscreen></iframe>
+          </td>
+          <td>
+            <iframe id="selected" width="560" height="315" src="https://www.youtube.com/embed/BQeMxWjpr-Y" frameborder="0" allowfullscreen></iframe>
+          </td>
+        </tr>
+      </tbody> 
+  <!--    <div id = "title">Music:</div>
+       <iframe id="selected" class="boxspace" width="560" height="315" src="https://www.youtube.com/embed/0pVABElms84" frameborder="0" allowfullscreen></iframe> --> <!--embeds youtube video. Setting iframe class to boxspace makes it size of the boxspace-->
+  <!-- <iframe id="selected" class="boxspace" width="560" height="315" src="https://www.youtube.com/embed/f1eMI0d-1Hs" frameborder="0" allowfullscreen></iframe>
+      <iframe id="selected" class="boxspace" width="560" height="315" src="https://www.youtube.com/embed/mknLaFJZ4v4" frameborder="0" allowfullscreen></iframe>
+      <iframe id="selected" class="boxspace" width="560" height="315" src="https://www.youtube.com/embed/CE92-dRwjjM" frameborder="0" allowfullscreen></iframe>-->
     </div>
   </body>
 </html>
