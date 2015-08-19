@@ -4,7 +4,7 @@ body{
 
 .menu{
   position: fixed;
-  margin-top: -0.5%;
+  margin-top: -1%;
   left: 0.02%;
   height: 100%;
   width: 13.5%;
@@ -12,32 +12,89 @@ body{
   background: #2C3539;
 }
 
-.menu h3{
-  font-size: 3.1em;
+h3{
+  font-size: 2.1em;/*3.1 for Cary*/
   font-family: 'Poiret One', 'Arial';
   font-weight: bold;
   color: white;
 }
 
 h3:hover{
-  font-size: 3.1em;
-  font-family:'Poiret One';
+  font-family: 'Poiret One';
   color:#1cc4e7;
   font-weight: bold;
-}
+} 
 
-.menu li{
+.menu .slidemenu li{
   list-style-type: none;
   margin-left: -54%;
   padding-left: 38.00%;
   font-size: 1.5em;
-  width: 70%;
   font-family: 'Poiret One', 'Arial';
   color: white;
+  animation: shiftback 0.5s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation: shiftback 0.5s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: shiftback 0.5s ease;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: shiftback 0.5s ease;
+  -o-animation-fill-mode: forwards;
 }
 
-.menu li:hover{
-  transform: translateX(14%);
+@keyframes shiftback{
+  0%{ transform: translateX(8%); }
+  100%{ transform: translateX(0em); }
+}
+
+@-webkit-keyframes shiftback{
+  0%{ transform: translateX(8%); }
+  100%{ transform: translateX(0em); }
+}
+
+@-moz-keyframes shiftback{
+  0%{ transform: translateX(8%); }
+  100%{ transform: translateX(0em); }
+}
+
+@-o-keyframes shiftback{
+  0%{ transform: translateX(8%); }
+  100%{ transform: translateX(0em); }
+}
+.menu .slidemenu li:hover a{
+  color: #1cc4e7;
+  font-weight: bold;
+}
+
+.menu .slidemenu li:hover{
+  animation: lishift 0.5s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation: lishift 0.5s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: lishift 0.5s ease;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: lishift 0.5s ease;
+  -o-animation-fill-mode: forwards;
+}
+
+@keyframes lishift{
+  0%{ transform: translateX(0em); }
+  100%{ transform: translateX(8%); }
+}
+
+@-webkit-keyframes lishift{
+  0%{ transform: translateX(0em); }
+  100%{ transform: translateX(8%); }
+}
+
+@-moz-keyframes lishift{
+  0%{ transform: translateX(0em); }
+  100%{ transform: translateX(8%); }
+}
+
+@-o-keyframes lishift{
+  0%{ transform: translateX(0em); }
+  100%{ transform: translateX(8%); }
 }
 
 .menu a{
@@ -51,14 +108,31 @@ h3:hover{
   font-weight: bold;
 }
 
+.line{
+  position: relative;
+  margin-top: 8%;
+  margin-left: 21.0%;
+  height: 0.15em;
+  width: 50%;
+  border: solid 1.5px #26ad80;
+}
+
+.infomenu{
+  font-family: "Poiret One", 'Arial';
+  font-size: 1.1em;
+  position: fixed;
+  margin-top: 1%;
+  margin-left: -1.45%;
+  width: 13.3%;
+}
+
 .display{
-  border: 2px solid #2C3539;
   z-index: 2;
   float:right;
   position: fixed;
   margin-left: 13.5%;
-  margin-top: 3%;
-  height: 94.3%;
+  margin-top: 5%;
+  height: 94.4%;
   width: 86.7%;
   overflow: auto;
   padding:1% 1% 1% 1%;
@@ -78,7 +152,14 @@ form{
   margin-top: 0.6%;
   margin-right: 0.5%;
   float: right;
+  color: white;
 }
+
+/*form{
+  margin-top: 0.6%;
+  margin-right: 0.5%;
+  float: right;
+}*/
 
 .sfm input {
     background-color: #f5f5f5; 
@@ -89,4 +170,161 @@ form{
     letter-spacing: 0.0625em; 
     padding: 0.25em 0.5em;
     font-family: calibri, helvetica, arial;
+}
+
+#logbut{
+  background-color: #ababab;
+  color: white;
+}
+
+.Forgot{
+  margin-top: 1.5%;
+  margin-right: 0.5%;
+  float: right;
+  color: white;
+}
+
+.Forgot:hover{
+  color: #1cc4e7;
+}
+
+@media screen and (max-width: 540px){
+  body{
+  background: #2C3539;
+  }
+
+.menu{
+  position: fixed;
+  margin-top: -3.0%;
+  left: 0.02%;
+  height: 100%;
+  width: 13.5%;
+  padding-left: 0.9%;
+  background: #2C3539;
+}
+
+h3{
+  font-size: 1.4em;/*3.1 for Cary*/
+  margin-left: 0.2em;
+  margin-bottom: -0.05em;
+  font-family: 'Poiret One', 'Arial';
+  font-weight: bold;
+  color: white;
+}
+
+h3:hover{
+  font-family: 'Poiret One';
+  color:#1cc4e7;
+  font-weight: bold;
+}
+
+.menu .slidemenu li{
+  list-style-type: none;
+  margin-left: -4em;
+  font-size: 0.6em;
+  font-family: 'Poiret One', 'Arial';
+  color: white;
+}
+
+.menu .slidemenu li:hover a{
+  color: #1cc4e7;
+  font-weight: bold;
+}
+
+.menu .slidemenu li:hover{
+  animation: lishift 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+.menu a{
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+}
+
+.menu a:hover{
+  color: #1cc4e7;
+  font-weight: bold;
+}
+
+.line{
+  position: relative;
+  margin-top: 8%;
+  margin-left: 21.0%;
+  height: 0.15em;
+  width: 50%;
+  border: solid 1.5px #26ad80;
+}
+
+.infomenu{
+  font-family: "Poiret One", 'Arial';
+  font-size: 0.4em;
+  position: fixed;
+  margin-top: 1%;
+  margin-left: -5.3em;
+  width: 13.3%;
+}
+
+.display{
+  z-index: 2;
+  float:right;
+  position: fixed;
+  margin-left: 20%;
+  margin-top: 3em;
+  height: 94.4%;
+  width: 86.7%;
+  overflow: auto;
+  padding:1% 1% 1% 1%;
+  border-radius: 2em 0em 0em 0em;
+  border: solid 2px #26ad80;
+  background:#434343;
+}
+
+#selected{
+  transition: opacity 1s ease ;
+      -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+          -o-transition: opacity 1s ease;
+}
+
+form{
+  margin-top: 0.6%;
+  margin-right: 0.5%;
+  float: right;
+  color: white;
+}
+
+/*form{
+  margin-top: 0.6%;
+  margin-right: 0.5%;
+  float: right;
+}*/
+
+.sfm input {
+    background-color: #f5f5f5; 
+    font-size: 0.4em; 
+    border: 0px; 
+    margin-top: 0px; 
+    color: #999; 
+    letter-spacing: 0.0625em; 
+    padding: 0.25em 0.5em;
+    font-family: calibri, helvetica, arial;
+}
+
+#logbut{
+  background-color: #ababab;
+  color: white;
+}
+
+.Forgot{
+  font-size: 0.4em;
+  margin-top: 1.5%;
+  margin-right: 0.5%;
+  float: right;
+  color: white;
+}
+
+.Forgot:hover{
+  color: #1cc4e7;
+}
 }
